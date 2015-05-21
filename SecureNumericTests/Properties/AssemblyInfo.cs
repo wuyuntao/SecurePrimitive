@@ -5,13 +5,13 @@ using System.Runtime.InteropServices;
 // 有关程序集的常规信息通过以下
 // 特性集控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("SecureNumeric")]
-[assembly: AssemblyDescription( "Protect numeric data from memory modification" )]
+[assembly: AssemblyTitle("SecureNumericTests")]
+[assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Wu Yuntao")]
-[assembly: AssemblyProduct("SecureNumeric")]
-[assembly: AssemblyCopyright("Copyright Wu Yuntao © 2015")]
-[assembly: AssemblyTrademark("Wu Yuntao")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("SecureNumericTests")]
+[assembly: AssemblyCopyright("Copyright ©  2015")]
+[assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
 // 将 ComVisible 设置为 false 使此程序集中的类型
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // 如果此项目向 COM 公开，则下列 GUID 用于类型库的 ID
-[assembly: Guid("a7809872-2f13-4ee0-98c6-0cd4e82f0baa")]
+[assembly: Guid("86415a1f-a294-43d6-933a-4a08815a6efc")]
 
 // 程序集的版本信息由下面四个值组成:
 //
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // 可以指定所有这些值，也可以使用“生成号”和“修订号”的默认值，
 // 方法是按如下所示使用“*”:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("0.0.1.0")]
-[assembly: AssemblyFileVersion("0.0.1.0")]
+[assembly: AssemblyVersion("1.0.0.0")]
+[assembly: AssemblyFileVersion("1.0.0.0")]

@@ -43,6 +43,5 @@ namespace SecureNumeric.Encryptors
 		public abstract long Decrypt(long value);
 
 		#endregion
-
 	}
 }
