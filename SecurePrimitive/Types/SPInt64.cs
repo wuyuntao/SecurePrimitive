@@ -3,7 +3,7 @@ using System;
 
 namespace SecurePrimitive.Types
 {
-	public struct SPInt64 : IComparable, IComparable<long>, IComparable<SPInt64>, IFormattable, IEquatable<long>, IEquatable<SPInt64>, IConvertible
+	public partial struct SPInt64 : IComparable, IComparable<long>, IComparable<SPInt64>, IFormattable, IEquatable<long>, IEquatable<SPInt64>, IConvertible
 	{
 		IEncryptor encryptor;
 		long encryptedValue;

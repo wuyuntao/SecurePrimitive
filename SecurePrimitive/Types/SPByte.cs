@@ -3,7 +3,7 @@ using System;
 
 namespace SecurePrimitive.Types
 {
-	public struct SPByte : IComparable, IComparable<byte>, IComparable<SPByte>, IFormattable, IEquatable<byte>, IEquatable<SPByte>, IConvertible
+	public partial struct SPByte : IComparable, IComparable<byte>, IComparable<SPByte>, IFormattable, IEquatable<byte>, IEquatable<SPByte>, IConvertible
 	{
 		IEncryptor encryptor;
 		byte encryptedValue;

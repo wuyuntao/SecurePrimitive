@@ -38,6 +38,14 @@
     <Compile Include="Encryptors\BitOffsetEncryptor.cs" />
     <Compile Include="Encryptors\IEncryptor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Types\Conversions\SPByte.Conversion.cs" />
+    <Compile Include="Types\Conversions\SPInt16.Conversion.cs" />
+    <Compile Include="Types\Conversions\SPInt32.Conversion.cs" />
+    <Compile Include="Types\Conversions\SPInt64.Conversion.cs" />
+    <Compile Include="Types\Conversions\SPSByte.Conversion.cs" />
+    <Compile Include="Types\Conversions\SPUInt16.Conversion.cs" />
+    <Compile Include="Types\Conversions\SPUInt32.Conversion.cs" />
+    <Compile Include="Types\Conversions\SPUInt64.Conversion.cs" />
     <Compile Include="Types\SPSByte.cs" />
     <Compile Include="Types\SPDouble.cs" />
     <Compile Include="Types\SPInt16.cs" />
@@ -50,6 +58,7 @@
     <Compile Include="Types\SPByte.cs" />
     <Compile Include="Types\SPBoolean.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
