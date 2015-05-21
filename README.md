@@ -1,3 +1,3 @@
-# SecureNumeric
+# SecurePrimitive
 
-Protect numeric data from memory modification
+Provide several secure primitive data types to protect data from memory modification
