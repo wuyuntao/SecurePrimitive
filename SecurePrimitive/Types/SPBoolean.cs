@@ -174,5 +174,19 @@ namespace SecurePrimitive.Types
 		}
 
 		#endregion
+
+		#region Type Conversion
+
+		public static explicit operator SPBoolean(bool value)
+		{
+			return new SPBoolean( value );
+		}
+
+		public static explicit operator bool(SPBoolean value)
+		{
+			return value.Value;
+		}
+
+		#endregion
 	}
 }

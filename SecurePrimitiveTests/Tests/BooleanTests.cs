@@ -30,14 +30,24 @@ namespace SecurePrimitive.Tests
 		[Test]
 		public void TestComparable()
 		{
-			var byteVal1 = RandomBoolValue;
-			var byteVal2 = RandomBoolValue;
+			var boolVal1 = RandomBoolValue;
+			var boolVal2 = RandomBoolValue;
 
-			var spBooleanVal1 = new SPBoolean( byteVal1 );
-			var spBooleanVal2 = new SPBoolean( byteVal2 );
+			var spBooleanVal1 = new SPBoolean( boolVal1 );
+			var spBooleanVal2 = new SPBoolean( boolVal2 );
 
-			Assert.AreEqual( byteVal1.CompareTo( byteVal2 ), spBooleanVal1.CompareTo( spBooleanVal2 ), string.Format( "{0}, {1}, {2}, {3}", byteVal1, byteVal2, spBooleanVal1, spBooleanVal2 ) );
-			Assert.AreEqual( spBooleanVal1.CompareTo( byteVal2 ), spBooleanVal1.CompareTo( spBooleanVal2 ) );
+			Assert.AreEqual( boolVal1.CompareTo( boolVal2 ), spBooleanVal1.CompareTo( spBooleanVal2 ), string.Format( "{0}, {1}, {2}, {3}", boolVal1, boolVal2, spBooleanVal1, spBooleanVal2 ) );
+			Assert.AreEqual( spBooleanVal1.CompareTo( boolVal2 ), spBooleanVal1.CompareTo( spBooleanVal2 ) );
+		}
+
+		[Test]
+		public void TestConversion()
+		{
+			bool byteVal1 = RandomBoolValue;
+			bool byteVal2 = (bool)new SPBoolean( byteVal1 );
+			SPBoolean spBooleanVal = (SPBoolean)byteVal1;
+
+			Assert.AreEqual( byteVal2, spBooleanVal );
 		}
 
 		private bool RandomBoolValue

@@ -1,3 +1,3 @@
 # SecurePrimitive
 
-Provide several secure primitive data types to protect data from memory modification
+Protect primitive data types from memory modification
