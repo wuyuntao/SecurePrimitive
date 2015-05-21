@@ -48,6 +48,7 @@
     <Compile Include="Tests\UInt32Tests.cs" />
     <Compile Include="Tests\Int64Tests.cs" />
     <Compile Include="Tests\UInt64Tests.cs" />
+    <Compile Include="Tests\BooleanTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
