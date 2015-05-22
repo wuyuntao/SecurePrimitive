@@ -40,22 +40,6 @@ namespace SecurePrimitive.Tests
 			Assert.AreEqual( spByteVal1.CompareTo( byteVal2 ), spByteVal1.CompareTo( spByteVal2 ) );
 		}
 
-		[Test]
-		public void TestCalculation()
-		{
-			var byteVal1 = RandomByteValue;
-			var byteVal2 = RandomByteValue;
-
-			var res1 = (byte)( byteVal1 + byteVal2 );
-			var res2 = (SPByte)byteVal1 + byteVal2;
-			var res3 = byteVal1 + (SPByte)byteVal2;
-			var res4 = (SPByte)byteVal1 + (SPByte)byteVal2;
-
-			Assert.AreEqual( res1, res2 );
-			Assert.AreEqual( res2, res3 );
-			Assert.AreEqual( res3, res4 );
-		}
-
 		private byte RandomByteValue
 		{
 			get { return (byte)random.Next(); }
