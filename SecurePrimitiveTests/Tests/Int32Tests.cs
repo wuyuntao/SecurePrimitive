@@ -1,5 +1,5 @@
 ﻿using NUnit.Framework;
-using SecurePrimitive.Types;
+using SecurePrimitive;
 using System;
 
 namespace SecurePrimitive.Tests

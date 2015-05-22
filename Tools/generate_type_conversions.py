@@ -14,10 +14,11 @@ SPTYPE_MAPPINGS = (
 )
 
 TYPE_CONVERSION_DIR = path.join(path.dirname(path.realpath(__file__)), '../SecurePrimitive/Types/Conversions/')
+
 TYPE_CONVERSION_HEADER = '''// This file is auto generatored. Don't modify it.
 using System;
 
-namespace SecurePrimitive.Types
+namespace SecurePrimitive
 {
 	public partial struct %s
 	{'''
@@ -79,11 +80,8 @@ def find_cstype(sptype):
 
 	raise Exception('Invalid sptype')
 
-def generate_sptype_type_conversions(from_sptype):
-	filename = '%s.Conversion.cs' % from_sptype
-	filepath = path.join(TYPE_CONVERSION_DIR, filename)
-
-	code = TYPE_CONVERSION_HEADER % from_sptype
+def generate_sptype_conversion(from_sptype):
+	code = ''
 
 	for to_sptype, to_cstype in SPTYPE_MAPPINGS:
 		code_values = {
@@ -97,7 +95,15 @@ def generate_sptype_type_conversions(from_sptype):
 			code += IMPLICIT_TYPE_CONVERSION % code_values
 		else:
 			code += EXPLICIT_TYPE_CONVERSION % code_values
+	
+	return code
 
+def generate_sptype_extra_helpers(from_sptype):
+	filename = '%s.Conversion.cs' % from_sptype
+	filepath = path.join(TYPE_CONVERSION_DIR, filename)
+
+	code = TYPE_CONVERSION_HEADER % from_sptype
+	code += generate_sptype_conversion(from_sptype)
 	code += TYPE_CONVERSION_FOOTER
 
 	f = open(filepath, 'w')
@@ -106,7 +112,7 @@ def generate_sptype_type_conversions(from_sptype):
 
 def main():
 	for sptype, cptype in SPTYPE_MAPPINGS:
-		generate_sptype_type_conversions( sptype )
+		generate_sptype_extra_helpers( sptype )
 
 if __name__ == '__main__':
 	main()

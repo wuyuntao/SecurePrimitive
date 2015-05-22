@@ -1,7 +1,7 @@
 ﻿using SecurePrimitive.Encryptors;
 using System;
 
-namespace SecurePrimitive.Types
+namespace SecurePrimitive
 {
 	public struct SPBoolean : IComparable, IComparable<bool>, IComparable<SPBoolean>, IEquatable<bool>, IEquatable<SPBoolean>, IConvertible
 	{

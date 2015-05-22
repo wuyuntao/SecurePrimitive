@@ -47,11 +47,9 @@
     <Compile Include="Types\Conversions\SPUInt32.Conversion.cs" />
     <Compile Include="Types\Conversions\SPUInt64.Conversion.cs" />
     <Compile Include="Types\SPSByte.cs" />
-    <Compile Include="Types\SPDouble.cs" />
     <Compile Include="Types\SPInt16.cs" />
     <Compile Include="Types\SPInt32.cs" />
     <Compile Include="Types\SPInt64.cs" />
-    <Compile Include="Types\SPSingle.cs" />
     <Compile Include="Types\SPUInt16.cs" />
     <Compile Include="Types\SPUInt32.cs" />
     <Compile Include="Types\SPUInt64.cs" />

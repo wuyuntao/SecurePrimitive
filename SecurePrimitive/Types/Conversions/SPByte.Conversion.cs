@@ -1,7 +1,7 @@
 // This file is auto generatored. Don't modify it.
 using System;
 
-namespace SecurePrimitive.Types
+namespace SecurePrimitive
 {
 	public partial struct SPByte
 	{

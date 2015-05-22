@@ -1,7 +1,7 @@
 ﻿using SecurePrimitive.Encryptors;
 using System;
 
-namespace SecurePrimitive.Types
+namespace SecurePrimitive
 {
 	public partial struct SPByte : IComparable, IComparable<byte>, IComparable<SPByte>, IFormattable, IEquatable<byte>, IEquatable<SPByte>, IConvertible
 	{
