@@ -9,12 +9,12 @@ namespace SecurePrimitive
 		
 		public static explicit operator SPUInt16(SPSByte value)
 		{
-			return new SPUInt16( (ushort)value.Value );
+			return new SPUInt16((ushort)value.Value);
 		}
 
 		public static explicit operator SPSByte(SPUInt16 value)
 		{
-			return new SPSByte( (sbyte)value.Value );
+			return new SPSByte((sbyte)value.Value);
 		}
 
 		#endregion
@@ -23,7 +23,7 @@ namespace SecurePrimitive
 		
 		public static explicit operator SPUInt16(sbyte value)
 		{
-			return new SPUInt16( (ushort)value );
+			return new SPUInt16((ushort)value);
 		}
 
 		public static explicit operator sbyte(SPUInt16 value)
@@ -37,12 +37,12 @@ namespace SecurePrimitive
 		
 		public static explicit operator SPUInt16(SPByte value)
 		{
-			return new SPUInt16( (ushort)value.Value );
+			return new SPUInt16((ushort)value.Value);
 		}
 
 		public static explicit operator SPByte(SPUInt16 value)
 		{
-			return new SPByte( (byte)value.Value );
+			return new SPByte((byte)value.Value);
 		}
 
 		#endregion
@@ -51,7 +51,7 @@ namespace SecurePrimitive
 		
 		public static explicit operator SPUInt16(byte value)
 		{
-			return new SPUInt16( (ushort)value );
+			return new SPUInt16((ushort)value);
 		}
 
 		public static explicit operator byte(SPUInt16 value)
@@ -65,12 +65,12 @@ namespace SecurePrimitive
 		
 		public static explicit operator SPUInt16(SPInt16 value)
 		{
-			return new SPUInt16( (ushort)value.Value );
+			return new SPUInt16((ushort)value.Value);
 		}
 
 		public static explicit operator SPInt16(SPUInt16 value)
 		{
-			return new SPInt16( (short)value.Value );
+			return new SPInt16((short)value.Value);
 		}
 
 		#endregion
@@ -79,7 +79,7 @@ namespace SecurePrimitive
 		
 		public static explicit operator SPUInt16(short value)
 		{
-			return new SPUInt16( (ushort)value );
+			return new SPUInt16((ushort)value);
 		}
 
 		public static explicit operator short(SPUInt16 value)
@@ -93,7 +93,7 @@ namespace SecurePrimitive
 		
 		public static implicit operator SPUInt16(ushort value)
 		{
-			return new SPUInt16( value );
+			return new SPUInt16(value);
 		}
 
 		public static implicit operator ushort(SPUInt16 value)
@@ -107,12 +107,12 @@ namespace SecurePrimitive
 		
 		public static explicit operator SPUInt16(SPInt32 value)
 		{
-			return new SPUInt16( (ushort)value.Value );
+			return new SPUInt16((ushort)value.Value);
 		}
 
 		public static explicit operator SPInt32(SPUInt16 value)
 		{
-			return new SPInt32( (int)value.Value );
+			return new SPInt32((int)value.Value);
 		}
 
 		#endregion
@@ -121,7 +121,7 @@ namespace SecurePrimitive
 		
 		public static explicit operator SPUInt16(int value)
 		{
-			return new SPUInt16( (ushort)value );
+			return new SPUInt16((ushort)value);
 		}
 
 		public static explicit operator int(SPUInt16 value)
@@ -135,12 +135,12 @@ namespace SecurePrimitive
 		
 		public static explicit operator SPUInt16(SPUInt32 value)
 		{
-			return new SPUInt16( (ushort)value.Value );
+			return new SPUInt16((ushort)value.Value);
 		}
 
 		public static explicit operator SPUInt32(SPUInt16 value)
 		{
-			return new SPUInt32( (uint)value.Value );
+			return new SPUInt32((uint)value.Value);
 		}
 
 		#endregion
@@ -149,7 +149,7 @@ namespace SecurePrimitive
 		
 		public static explicit operator SPUInt16(uint value)
 		{
-			return new SPUInt16( (ushort)value );
+			return new SPUInt16((ushort)value);
 		}
 
 		public static explicit operator uint(SPUInt16 value)
@@ -163,12 +163,12 @@ namespace SecurePrimitive
 		
 		public static explicit operator SPUInt16(SPInt64 value)
 		{
-			return new SPUInt16( (ushort)value.Value );
+			return new SPUInt16((ushort)value.Value);
 		}
 
 		public static explicit operator SPInt64(SPUInt16 value)
 		{
-			return new SPInt64( (long)value.Value );
+			return new SPInt64((long)value.Value);
 		}
 
 		#endregion
@@ -177,7 +177,7 @@ namespace SecurePrimitive
 		
 		public static explicit operator SPUInt16(long value)
 		{
-			return new SPUInt16( (ushort)value );
+			return new SPUInt16((ushort)value);
 		}
 
 		public static explicit operator long(SPUInt16 value)
@@ -191,12 +191,12 @@ namespace SecurePrimitive
 		
 		public static explicit operator SPUInt16(SPUInt64 value)
 		{
-			return new SPUInt16( (ushort)value.Value );
+			return new SPUInt16((ushort)value.Value);
 		}
 
 		public static explicit operator SPUInt64(SPUInt16 value)
 		{
-			return new SPUInt64( (ulong)value.Value );
+			return new SPUInt64((ulong)value.Value);
 		}
 
 		#endregion
@@ -205,7 +205,7 @@ namespace SecurePrimitive
 		
 		public static explicit operator SPUInt16(ulong value)
 		{
-			return new SPUInt16( (ushort)value );
+			return new SPUInt16((ushort)value);
 		}
 
 		public static explicit operator ulong(SPUInt16 value)

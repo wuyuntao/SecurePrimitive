@@ -6,7 +6,7 @@ namespace SecurePrimitive.Tests
 {
 	public class BooleanTests
 	{
-		Random random = new Random();
+        private Random random = new Random();
 
 		[Test]
 		public void TestEquatable()
@@ -17,7 +17,7 @@ namespace SecurePrimitive.Tests
 			Assert.AreEqual( boolVal, spBooleanVal.Value );
 
 			boolVal = RandomBoolValue;
-			spBooleanVal.Value = boolVal;
+            spBooleanVal = (SPBoolean)boolVal;
 
 			Assert.AreEqual( boolVal, spBooleanVal.Value );
 

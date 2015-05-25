@@ -44,7 +44,4 @@ var int0 = spint0.Value;
 // Or get real value via implicit type casting
 int int1 = spint1;
 
-// Set value to SPInt32 variable
-spint0.Value = 20;
-
 ```

@@ -32,7 +32,7 @@ IMPLICIT_TYPE_CONVERSION = '''
 		
 		public static implicit operator %(from_sptype)s(%(to_cstype)s value)
 		{
-			return new %(from_sptype)s( value );
+			return new %(from_sptype)s(value);
 		}
 
 		public static implicit operator %(to_cstype)s(%(from_sptype)s value)
@@ -48,12 +48,12 @@ EXPLICIT_TYPE_CONVERSION = '''
 		
 		public static explicit operator %(from_sptype)s(%(to_sptype)s value)
 		{
-			return new %(from_sptype)s( (%(from_cstype)s)value.Value );
+			return new %(from_sptype)s((%(from_cstype)s)value.Value);
 		}
 
 		public static explicit operator %(to_sptype)s(%(from_sptype)s value)
 		{
-			return new %(to_sptype)s( (%(to_cstype)s)value.Value );
+			return new %(to_sptype)s((%(to_cstype)s)value.Value);
 		}
 
 		#endregion
@@ -62,7 +62,7 @@ EXPLICIT_TYPE_CONVERSION = '''
 		
 		public static explicit operator %(from_sptype)s(%(to_cstype)s value)
 		{
-			return new %(from_sptype)s( (%(from_cstype)s)value );
+			return new %(from_sptype)s((%(from_cstype)s)value);
 		}
 
 		public static explicit operator %(to_cstype)s(%(from_sptype)s value)

@@ -2,147 +2,147 @@
 
 namespace SecurePrimitive.Encryptors
 {
-	class BitOffsetEncryptor : IEncryptor
-	{
-		static readonly Random random = new Random();
+    class BitOffsetEncryptor : IEncryptor
+    {
+        private static readonly Random random = new Random();
 
-		byte offset;
+        private byte offset;
 
-		#region Byte
+        #region Byte
 
-		public byte Encrypt(byte value)
-		{
-			offset = GetRandomBitOffset( 8 );
+        public byte Encrypt(byte value)
+        {
+            offset = GetRandomBitOffset(8);
 
-			var higher = (byte)( value << offset );
-			var lower = (byte)( value >> ( 8 - offset ) );
+            var higher = (byte)(value << offset);
+            var lower = (byte)(value >> (8 - offset));
 
-			return (byte)( higher | lower );
-		}
+            return (byte)(higher | lower);
+        }
 
-		public sbyte Encrypt(sbyte value)
-		{
-			return (sbyte)Encrypt( (byte)value );
-		}
+        public sbyte Encrypt(sbyte value)
+        {
+            return (sbyte)Encrypt((byte)value);
+        }
 
-		public byte Decrypt(byte value)
-		{
-			var higher = (byte)( value >> offset );
-			var lower = (byte)( value << ( 8 - offset ) );
+        public byte Decrypt(byte value)
+        {
+            var higher = (byte)(value >> offset);
+            var lower = (byte)(value << (8 - offset));
 
-			return (byte)( higher | lower );
-		}
+            return (byte)(higher | lower);
+        }
 
-		public sbyte Decrypt(sbyte value)
-		{
-			return (sbyte)Decrypt( (byte)value );
-		}
+        public sbyte Decrypt(sbyte value)
+        {
+            return (sbyte)Decrypt((byte)value);
+        }
 
-		#endregion
+        #endregion
 
-		#region Int16
+        #region Int16
 
-		public ushort Encrypt(ushort value)
-		{
-			offset = GetRandomBitOffset( 16 );
+        public ushort Encrypt(ushort value)
+        {
+            offset = GetRandomBitOffset(16);
 
-			var higher = (ushort)( value << offset );
-			var lower = (ushort)( value >> ( 16 - offset ) );
+            var higher = (ushort)(value << offset);
+            var lower = (ushort)(value >> (16 - offset));
 
-			return (ushort)( higher | lower );
-		}
+            return (ushort)(higher | lower);
+        }
 
-		public short Encrypt(short value)
-		{
-			return (short)Encrypt( (ushort)value );
-		}
+        public short Encrypt(short value)
+        {
+            return (short)Encrypt((ushort)value);
+        }
 
-		public ushort Decrypt(ushort value)
-		{
-			var higher = (ushort)( value >> offset );
-			var lower = (ushort)( value << ( 16 - offset ) );
+        public ushort Decrypt(ushort value)
+        {
+            var higher = (ushort)(value >> offset);
+            var lower = (ushort)(value << (16 - offset));
 
-			return (ushort)( higher | lower );
-		}
+            return (ushort)(higher | lower);
+        }
 
-		public short Decrypt(short value)
-		{
-			return (short)Decrypt( (ushort)value );
-		}
+        public short Decrypt(short value)
+        {
+            return (short)Decrypt((ushort)value);
+        }
 
-		#endregion
+        #endregion
 
-		#region Int32
+        #region Int32
 
-		public uint Encrypt(uint value)
-		{
-			offset = GetRandomBitOffset( 32 );
+        public uint Encrypt(uint value)
+        {
+            offset = GetRandomBitOffset(32);
 
-			var higher = (uint)( value << offset );
-			var lower = (uint)( value >> ( 32 - offset ) );
+            var higher = (uint)(value << offset);
+            var lower = (uint)(value >> (32 - offset));
 
-			return (uint)( higher | lower );
-		}
+            return (uint)(higher | lower);
+        }
 
-		public int Encrypt(int value)
-		{
-			return (int)Encrypt( (uint)value );
-		}
+        public int Encrypt(int value)
+        {
+            return (int)Encrypt((uint)value);
+        }
 
-		public uint Decrypt(uint value)
-		{
-			var higher = (uint)( value >> offset );
-			var lower = (uint)( value << ( 32 - offset ) );
+        public uint Decrypt(uint value)
+        {
+            var higher = (uint)(value >> offset);
+            var lower = (uint)(value << (32 - offset));
 
-			return (uint)( higher | lower );
-		}
+            return (uint)(higher | lower);
+        }
 
-		public int Decrypt(int value)
-		{
-			return (int)Decrypt( (uint)value );
-		}
+        public int Decrypt(int value)
+        {
+            return (int)Decrypt((uint)value);
+        }
 
-		#endregion
+        #endregion
 
-		#region Int64
+        #region Int64
 
-		public ulong Encrypt(ulong value)
-		{
-			offset = GetRandomBitOffset( 64 );
+        public ulong Encrypt(ulong value)
+        {
+            offset = GetRandomBitOffset(64);
 
-			var higher = (ulong)( value << offset );
-			var lower = (ulong)( value >> ( 64 - offset ) );
+            var higher = (ulong)(value << offset);
+            var lower = (ulong)(value >> (64 - offset));
 
-			return (ulong)( higher | lower );
-		}
+            return (ulong)(higher | lower);
+        }
 
-		public long Encrypt(long value)
-		{
-			return (long)Encrypt( (ulong)value );
-		}
+        public long Encrypt(long value)
+        {
+            return (long)Encrypt((ulong)value);
+        }
 
-		public ulong Decrypt(ulong value)
-		{
-			var higher = (ulong)( value >> offset );
-			var lower = (ulong)( value << ( 64 - offset ) );
+        public ulong Decrypt(ulong value)
+        {
+            var higher = (ulong)(value >> offset);
+            var lower = (ulong)(value << (64 - offset));
 
-			return (ulong)( higher | lower );
-		}
+            return (ulong)(higher | lower);
+        }
 
-		public long Decrypt(long value)
-		{
-			return (long)Decrypt( (ulong)value );
-		}
+        public long Decrypt(long value)
+        {
+            return (long)Decrypt((ulong)value);
+        }
 
-		#endregion
+        #endregion
 
-		#region Helper
+        #region Helper
 
-		byte GetRandomBitOffset(byte maxValue)
-		{
-			return (byte)random.Next( 1, maxValue );		// Zero is not allowed to be offset value
-		}
+        private byte GetRandomBitOffset(byte maxValue)
+        {
+            return (byte)random.Next(1, maxValue);		// Zero is not allowed to be offset value
+        }
 
-		#endregion
-	}
+        #endregion
+    }
 }

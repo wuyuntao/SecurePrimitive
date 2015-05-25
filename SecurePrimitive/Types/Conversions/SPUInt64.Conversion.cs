@@ -9,12 +9,12 @@ namespace SecurePrimitive
 		
 		public static explicit operator SPUInt64(SPSByte value)
 		{
-			return new SPUInt64( (ulong)value.Value );
+			return new SPUInt64((ulong)value.Value);
 		}
 
 		public static explicit operator SPSByte(SPUInt64 value)
 		{
-			return new SPSByte( (sbyte)value.Value );
+			return new SPSByte((sbyte)value.Value);
 		}
 
 		#endregion
@@ -23,7 +23,7 @@ namespace SecurePrimitive
 		
 		public static explicit operator SPUInt64(sbyte value)
 		{
-			return new SPUInt64( (ulong)value );
+			return new SPUInt64((ulong)value);
 		}
 
 		public static explicit operator sbyte(SPUInt64 value)
@@ -37,12 +37,12 @@ namespace SecurePrimitive
 		
 		public static explicit operator SPUInt64(SPByte value)
 		{
-			return new SPUInt64( (ulong)value.Value );
+			return new SPUInt64((ulong)value.Value);
 		}
 
 		public static explicit operator SPByte(SPUInt64 value)
 		{
-			return new SPByte( (byte)value.Value );
+			return new SPByte((byte)value.Value);
 		}
 
 		#endregion
@@ -51,7 +51,7 @@ namespace SecurePrimitive
 		
 		public static explicit operator SPUInt64(byte value)
 		{
-			return new SPUInt64( (ulong)value );
+			return new SPUInt64((ulong)value);
 		}
 
 		public static explicit operator byte(SPUInt64 value)
@@ -65,12 +65,12 @@ namespace SecurePrimitive
 		
 		public static explicit operator SPUInt64(SPInt16 value)
 		{
-			return new SPUInt64( (ulong)value.Value );
+			return new SPUInt64((ulong)value.Value);
 		}
 
 		public static explicit operator SPInt16(SPUInt64 value)
 		{
-			return new SPInt16( (short)value.Value );
+			return new SPInt16((short)value.Value);
 		}
 
 		#endregion
@@ -79,7 +79,7 @@ namespace SecurePrimitive
 		
 		public static explicit operator SPUInt64(short value)
 		{
-			return new SPUInt64( (ulong)value );
+			return new SPUInt64((ulong)value);
 		}
 
 		public static explicit operator short(SPUInt64 value)
@@ -93,12 +93,12 @@ namespace SecurePrimitive
 		
 		public static explicit operator SPUInt64(SPUInt16 value)
 		{
-			return new SPUInt64( (ulong)value.Value );
+			return new SPUInt64((ulong)value.Value);
 		}
 
 		public static explicit operator SPUInt16(SPUInt64 value)
 		{
-			return new SPUInt16( (ushort)value.Value );
+			return new SPUInt16((ushort)value.Value);
 		}
 
 		#endregion
@@ -107,7 +107,7 @@ namespace SecurePrimitive
 		
 		public static explicit operator SPUInt64(ushort value)
 		{
-			return new SPUInt64( (ulong)value );
+			return new SPUInt64((ulong)value);
 		}
 
 		public static explicit operator ushort(SPUInt64 value)
@@ -121,12 +121,12 @@ namespace SecurePrimitive
 		
 		public static explicit operator SPUInt64(SPInt32 value)
 		{
-			return new SPUInt64( (ulong)value.Value );
+			return new SPUInt64((ulong)value.Value);
 		}
 
 		public static explicit operator SPInt32(SPUInt64 value)
 		{
-			return new SPInt32( (int)value.Value );
+			return new SPInt32((int)value.Value);
 		}
 
 		#endregion
@@ -135,7 +135,7 @@ namespace SecurePrimitive
 		
 		public static explicit operator SPUInt64(int value)
 		{
-			return new SPUInt64( (ulong)value );
+			return new SPUInt64((ulong)value);
 		}
 
 		public static explicit operator int(SPUInt64 value)
@@ -149,12 +149,12 @@ namespace SecurePrimitive
 		
 		public static explicit operator SPUInt64(SPUInt32 value)
 		{
-			return new SPUInt64( (ulong)value.Value );
+			return new SPUInt64((ulong)value.Value);
 		}
 
 		public static explicit operator SPUInt32(SPUInt64 value)
 		{
-			return new SPUInt32( (uint)value.Value );
+			return new SPUInt32((uint)value.Value);
 		}
 
 		#endregion
@@ -163,7 +163,7 @@ namespace SecurePrimitive
 		
 		public static explicit operator SPUInt64(uint value)
 		{
-			return new SPUInt64( (ulong)value );
+			return new SPUInt64((ulong)value);
 		}
 
 		public static explicit operator uint(SPUInt64 value)
@@ -177,12 +177,12 @@ namespace SecurePrimitive
 		
 		public static explicit operator SPUInt64(SPInt64 value)
 		{
-			return new SPUInt64( (ulong)value.Value );
+			return new SPUInt64((ulong)value.Value);
 		}
 
 		public static explicit operator SPInt64(SPUInt64 value)
 		{
-			return new SPInt64( (long)value.Value );
+			return new SPInt64((long)value.Value);
 		}
 
 		#endregion
@@ -191,7 +191,7 @@ namespace SecurePrimitive
 		
 		public static explicit operator SPUInt64(long value)
 		{
-			return new SPUInt64( (ulong)value );
+			return new SPUInt64((ulong)value);
 		}
 
 		public static explicit operator long(SPUInt64 value)
@@ -205,7 +205,7 @@ namespace SecurePrimitive
 		
 		public static implicit operator SPUInt64(ulong value)
 		{
-			return new SPUInt64( value );
+			return new SPUInt64(value);
 		}
 
 		public static implicit operator ulong(SPUInt64 value)

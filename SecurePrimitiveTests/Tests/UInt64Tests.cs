@@ -6,7 +6,7 @@ namespace SecurePrimitive.Tests
 {
 	public class UInt64Tests
 	{
-		Random random = new Random();
+        private Random random = new Random();
 
 		[Test]
 		public void TestEquatable()
@@ -17,7 +17,7 @@ namespace SecurePrimitive.Tests
 			Assert.AreEqual( ulongVal, snUInt64Val.Value );
 
 			ulongVal = (ulong)random.Next();
-			snUInt64Val.Value = ulongVal;
+			snUInt64Val = (SPUInt64) ulongVal;
 
 			Assert.AreEqual( ulongVal, snUInt64Val.Value );
 

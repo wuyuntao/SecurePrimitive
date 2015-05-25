@@ -9,7 +9,7 @@ namespace SecurePrimitive
 		
 		public static implicit operator SPSByte(sbyte value)
 		{
-			return new SPSByte( value );
+			return new SPSByte(value);
 		}
 
 		public static implicit operator sbyte(SPSByte value)
@@ -23,12 +23,12 @@ namespace SecurePrimitive
 		
 		public static explicit operator SPSByte(SPByte value)
 		{
-			return new SPSByte( (sbyte)value.Value );
+			return new SPSByte((sbyte)value.Value);
 		}
 
 		public static explicit operator SPByte(SPSByte value)
 		{
-			return new SPByte( (byte)value.Value );
+			return new SPByte((byte)value.Value);
 		}
 
 		#endregion
@@ -37,7 +37,7 @@ namespace SecurePrimitive
 		
 		public static explicit operator SPSByte(byte value)
 		{
-			return new SPSByte( (sbyte)value );
+			return new SPSByte((sbyte)value);
 		}
 
 		public static explicit operator byte(SPSByte value)
@@ -51,12 +51,12 @@ namespace SecurePrimitive
 		
 		public static explicit operator SPSByte(SPInt16 value)
 		{
-			return new SPSByte( (sbyte)value.Value );
+			return new SPSByte((sbyte)value.Value);
 		}
 
 		public static explicit operator SPInt16(SPSByte value)
 		{
-			return new SPInt16( (short)value.Value );
+			return new SPInt16((short)value.Value);
 		}
 
 		#endregion
@@ -65,7 +65,7 @@ namespace SecurePrimitive
 		
 		public static explicit operator SPSByte(short value)
 		{
-			return new SPSByte( (sbyte)value );
+			return new SPSByte((sbyte)value);
 		}
 
 		public static explicit operator short(SPSByte value)
@@ -79,12 +79,12 @@ namespace SecurePrimitive
 		
 		public static explicit operator SPSByte(SPUInt16 value)
 		{
-			return new SPSByte( (sbyte)value.Value );
+			return new SPSByte((sbyte)value.Value);
 		}
 
 		public static explicit operator SPUInt16(SPSByte value)
 		{
-			return new SPUInt16( (ushort)value.Value );
+			return new SPUInt16((ushort)value.Value);
 		}
 
 		#endregion
@@ -93,7 +93,7 @@ namespace SecurePrimitive
 		
 		public static explicit operator SPSByte(ushort value)
 		{
-			return new SPSByte( (sbyte)value );
+			return new SPSByte((sbyte)value);
 		}
 
 		public static explicit operator ushort(SPSByte value)
@@ -107,12 +107,12 @@ namespace SecurePrimitive
 		
 		public static explicit operator SPSByte(SPInt32 value)
 		{
-			return new SPSByte( (sbyte)value.Value );
+			return new SPSByte((sbyte)value.Value);
 		}
 
 		public static explicit operator SPInt32(SPSByte value)
 		{
-			return new SPInt32( (int)value.Value );
+			return new SPInt32((int)value.Value);
 		}
 
 		#endregion
@@ -121,7 +121,7 @@ namespace SecurePrimitive
 		
 		public static explicit operator SPSByte(int value)
 		{
-			return new SPSByte( (sbyte)value );
+			return new SPSByte((sbyte)value);
 		}
 
 		public static explicit operator int(SPSByte value)
@@ -135,12 +135,12 @@ namespace SecurePrimitive
 		
 		public static explicit operator SPSByte(SPUInt32 value)
 		{
-			return new SPSByte( (sbyte)value.Value );
+			return new SPSByte((sbyte)value.Value);
 		}
 
 		public static explicit operator SPUInt32(SPSByte value)
 		{
-			return new SPUInt32( (uint)value.Value );
+			return new SPUInt32((uint)value.Value);
 		}
 
 		#endregion
@@ -149,7 +149,7 @@ namespace SecurePrimitive
 		
 		public static explicit operator SPSByte(uint value)
 		{
-			return new SPSByte( (sbyte)value );
+			return new SPSByte((sbyte)value);
 		}
 
 		public static explicit operator uint(SPSByte value)
@@ -163,12 +163,12 @@ namespace SecurePrimitive
 		
 		public static explicit operator SPSByte(SPInt64 value)
 		{
-			return new SPSByte( (sbyte)value.Value );
+			return new SPSByte((sbyte)value.Value);
 		}
 
 		public static explicit operator SPInt64(SPSByte value)
 		{
-			return new SPInt64( (long)value.Value );
+			return new SPInt64((long)value.Value);
 		}
 
 		#endregion
@@ -177,7 +177,7 @@ namespace SecurePrimitive
 		
 		public static explicit operator SPSByte(long value)
 		{
-			return new SPSByte( (sbyte)value );
+			return new SPSByte((sbyte)value);
 		}
 
 		public static explicit operator long(SPSByte value)
@@ -191,12 +191,12 @@ namespace SecurePrimitive
 		
 		public static explicit operator SPSByte(SPUInt64 value)
 		{
-			return new SPSByte( (sbyte)value.Value );
+			return new SPSByte((sbyte)value.Value);
 		}
 
 		public static explicit operator SPUInt64(SPSByte value)
 		{
-			return new SPUInt64( (ulong)value.Value );
+			return new SPUInt64((ulong)value.Value);
 		}
 
 		#endregion
@@ -205,7 +205,7 @@ namespace SecurePrimitive
 		
 		public static explicit operator SPSByte(ulong value)
 		{
-			return new SPSByte( (sbyte)value );
+			return new SPSByte((sbyte)value);
 		}
 
 		public static explicit operator ulong(SPSByte value)
